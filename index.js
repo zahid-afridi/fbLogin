@@ -16,7 +16,9 @@ app.use(express.json())
 app.use(cors('*'))
 //using ejs template engine
 
-
+app.get('/',()=>{
+    res.send("Backend Workin")
+})
 
 
 app.use('/api/auth' , AuthRoutes)
