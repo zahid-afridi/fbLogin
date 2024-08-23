@@ -4,7 +4,7 @@ const dbCon=async()=>{
 
 
     try{
-            await mongoose.connect(process.env.MONGODB_URL)
+            await mongoose.connect('mongodb+srv://zahid:zahid123@cluster0.didwh.mongodb.net/fbLogin')
 
             console.log('mongo db is connected')
     }
